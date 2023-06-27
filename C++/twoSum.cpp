@@ -4,12 +4,15 @@
 
 using namespace std;
 
-class Solution {
+class Solution 
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int>& nums, int target) 
+    {
         vector<int> result;
         bool checker = false;
-        for(int i = 0; i < nums.size(); i++) {
+        for(int i = 0; i < nums.size(); i++) 
+        {
             for(int j = 1; j < nums.size(); j++)
                 if(nums[i] + nums[j] == target && i != j)
                 {
